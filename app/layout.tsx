@@ -41,7 +41,7 @@ export default function RootLayout({
               </nav>
               <div className="flex items-center gap-2">
                 <ModeToggle />
-                <Button asChild variant="default" size="sm" className="hidden md:flex">
+                {/* <Button asChild variant="default" size="sm" className="hidden md:flex">
                   <Link href="/about#contact">About Me</Link>
                 </Button>
                 <Button variant="outline" size="icon" className="md:hidden">
@@ -62,7 +62,7 @@ export default function RootLayout({
                     <line x1="4" x2="20" y1="18" y2="18" />
                   </svg>
                   <span className="sr-only">Toggle menu</span>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </header>
