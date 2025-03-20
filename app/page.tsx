@@ -13,10 +13,10 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Welcome to My Personal Blog
+                  Lingrui Cao
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Thoughts, stories and ideas about design, technology, and life.
+                  Is a failure
                 </p>
               </div>
               <div className="space-x-4">
@@ -99,24 +99,10 @@ export default function Home() {
 // Sample data - in a real app, this would come from a CMS or database
 const featuredPosts = [
   {
-    title: "Getting Started with Next.js",
-    slug: "getting-started-with-nextjs",
+    title: "TEST",
+    slug: "TEST",
     date: "June 12, 2024",
     image: "/placeholder.svg?height=400&width=600",
-    excerpt: "Learn how to build modern web applications with Next.js, React, and Tailwind CSS.",
-  },
-  {
-    title: "The Power of Server Components",
-    slug: "power-of-server-components",
-    date: "June 8, 2024",
-    image: "/placeholder.svg?height=400&width=600",
-    excerpt: "Exploring how React Server Components can improve performance and developer experience.",
-  },
-  {
-    title: "Designing for Accessibility",
-    slug: "designing-for-accessibility",
-    date: "June 1, 2024",
-    image: "/placeholder.svg?height=400&width=600",
-    excerpt: "Best practices for creating accessible web experiences that work for everyone.",
-  },
+    excerpt: "IDK",
+  }
 ]
