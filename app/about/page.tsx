@@ -15,23 +15,19 @@ export default function AboutPage() {
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    Hi, I'm a web developer and designer passionate about creating beautiful, functional, and accessible
-                    websites.
+                    Hi, I am a class of 2026  CCAstudent
                   </p>
                 </div>
                 <div className="space-y-4 text-gray-500 dark:text-gray-400">
                   <p>
-                    I've been working in web development for over 5 years, specializing in React, Next.js, and modern
-                    frontend technologies. My background in design helps me create experiences that are not only
-                    functional but also aesthetically pleasing.
+                    I have heavy interest in computers and engineering in general. I often spend way too much time researching 
+                    computers and AI
                   </p>
                   <p>
-                    When I'm not coding, you can find me hiking, reading science fiction, or experimenting with new
-                    recipes in the kitchen.
+                    I enjoy playing games in my free time
                   </p>
                   <p>
-                    This blog is where I share my thoughts on web development, design, and occasionally life in general.
-                    I hope you find something useful or interesting here!
+                    This blog is where I share my failureness
                   </p>
                 </div>
                 <div className="flex gap-4">
@@ -119,7 +115,7 @@ export default function AboutPage() {
       </main>
       <footer className="w-full border-t py-6">
         <div className="container flex flex-col items-center justify-center gap-4 px-4 md:px-6 md:flex-row">
-          <p className="text-sm text-gray-500 dark:text-gray-400">© 2024 My Personal Blog. All rights reserved.</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">© 2025 My Personal Blog. All rights reserved.</p>
           <nav className="flex gap-4">
             <Link href="#" className="text-sm text-gray-500 hover:underline dark:text-gray-400">
               Twitter
