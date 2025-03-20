@@ -15,7 +15,7 @@ export default function AboutPage() {
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    Hi, I am a class of 2026  CCAstudent
+                    Hi, I am a class of 2026 CCA student
                   </p>
                 </div>
                 <div className="space-y-4 text-gray-500 dark:text-gray-400">
