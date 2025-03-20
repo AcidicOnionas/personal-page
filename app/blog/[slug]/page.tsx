@@ -19,7 +19,7 @@ export default function BlogPost({ params }: BlogPostParams) {
     author: "Bumb ass behavior",
     image: "/placeholder.svg?height=600&width=1200",
     content: `
-      <p>TEST</p> 
+      <li>TEST</li> 
     `,
   }
 
