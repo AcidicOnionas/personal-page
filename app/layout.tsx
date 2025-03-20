@@ -25,7 +25,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <header className="sticky top-0 z-40 w-full border-b bg-background">
             <div className="container flex h-16 items-center justify-between py-4">
-              <Link href="/" className="flex items-center space-x-2 ml-2">
+              <Link href="/" className="flex items-center space-x-2 ml-4">
                 <span className="text-xl font-bold">My Blog</span>
               </Link>
               <nav className="hidden gap-6 md:flex">
@@ -42,7 +42,7 @@ export default function RootLayout({
               <div className="flex items-center gap-2">
                 <ModeToggle />
                 <Button asChild variant="default" size="sm" className="hidden md:flex">
-                  <Link href="/about#contact">Contact Me</Link>
+                  <Link href="/about#contact">About Me</Link>
                 </Button>
                 <Button variant="outline" size="icon" className="md:hidden">
                   <svg
