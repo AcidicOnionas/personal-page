@@ -14,51 +14,12 @@ export default function BlogPost({ params }: BlogPostParams) {
   // In a real app, you would fetch the post data based on the slug
   // For this example, we'll use a mock post
   const post = {
-    title: "Getting Started with Next.js",
+    title: "How TF DOES SLUG WORK",
     date: "June 12, 2024",
-    author: "Jane Doe",
+    author: "Bumb ass behavior",
     image: "/placeholder.svg?height=600&width=1200",
     content: `
-      <p>Next.js is a powerful React framework that makes building web applications easier and more efficient. It provides a great developer experience with features like server-side rendering, static site generation, and more.</p>
-      
-      <h2>Why Next.js?</h2>
-      
-      <p>There are several reasons why Next.js has become so popular:</p>
-      
-      <ul>
-        <li>Zero configuration required</li>
-        <li>Automatic code splitting</li>
-        <li>Server-side rendering</li>
-        <li>Static site generation</li>
-        <li>TypeScript support</li>
-        <li>Fast refresh</li>
-        <li>File-system based routing</li>
-      </ul>
-      
-      <h2>Getting Started</h2>
-      
-      <p>To create a new Next.js app, you can use the following command:</p>
-      
-      <pre><code>npx create-next-app@latest my-app</code></pre>
-      
-      <p>This will set up a new Next.js project with all the necessary configurations. You can then start the development server with:</p>
-      
-      <pre><code>cd my-app
-npm run dev</code></pre>
-      
-      <h2>Routing in Next.js</h2>
-      
-      <p>Next.js uses a file-system based router. Files and folders in the app directory map to URLs. For example:</p>
-      
-      <ul>
-        <li><code>app/page.tsx</code> → <code>/</code></li>
-        <li><code>app/blog/page.tsx</code> → <code>/blog</code></li>
-        <li><code>app/blog/[slug]/page.tsx</code> → <code>/blog/:slug</code></li>
-      </ul>
-      
-      <h2>Conclusion</h2>
-      
-      <p>Next.js provides an excellent framework for building modern web applications. Its features make development faster and more enjoyable while ensuring great performance for users.</p>
+      <p>TEST</p> 
     `,
   }
 
