@@ -18,9 +18,9 @@ export default function BlogPage() {
                   Thoughts, stories and ideas about design, technology, and life.
                 </p>
               </div>
-              <div className="w-full max-w-sm space-y-2">
+              {/* <div className="w-full max-w-sm space-y-2">
                 <Input type="search" placeholder="Search posts..." className="w-full" />
-              </div>
+              </div> */}
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
               {allPosts.map((post) => (
