@@ -102,7 +102,7 @@ const featuredPosts = [
     title: "TEST",
     slug: "TEST",
     date: "June 12, 2024",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/public/dumb.jpg?height=400&width=600",
     excerpt: "IDK",
   }
 ]
