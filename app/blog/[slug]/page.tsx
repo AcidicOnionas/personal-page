@@ -18,9 +18,7 @@ export default function BlogPost({ params }: BlogPostParams) {
     date: "June 12, 2024",
     author: "Bumb ass behavior",
     image: "/placeholder.svg?height=600&width=1200",
-    content: `
-      <li>TEST</li> 
-    `,
+    content: "bruh",
   }
 
   return (
