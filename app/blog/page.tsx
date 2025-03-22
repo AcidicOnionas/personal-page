@@ -75,7 +75,7 @@ const allPosts = [
     title: "I have no idea what I'm doing",
     slug: "test",
     date: "March 18, 2025",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/dumb.jpg?height=400&width=600",
     excerpt: "I am a bum",
   }
 ]
