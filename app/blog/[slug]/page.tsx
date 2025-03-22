@@ -28,7 +28,7 @@ export default function BlogPost({ params }: BlogPostParams) {
           <Button variant="ghost" asChild className="mb-8 -ml-4">
             <Link href="/blog">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to all posts
+              Back
             </Link>
           </Button>
 
