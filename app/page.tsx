@@ -16,7 +16,7 @@ export default function Home() {
                   Lingrui Cao
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Is a failure
+                  Personal Page
                 </p>
               </div>
               <div className="space-x-4">
