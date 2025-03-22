@@ -15,7 +15,7 @@ export default function BlogPage() {
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Blog</h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Thoughts, stories and ideas about design, technology, and life.
+                  Thoughts about life.
                 </p>
               </div>
               {/* <div className="w-full max-w-sm space-y-2">
