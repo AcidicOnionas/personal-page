@@ -78,8 +78,8 @@ export default function BlogPost({ params }: BlogPostParams) {
             className="prose prose-gray max-w-none pt-10 dark:prose-invert"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
-
-          <Separator className="my-10" />
+{/* 
+          <Separator className="my-10" /> */}
 
           {/* <div className="flex flex-col space-y-4">
             <h3 className="text-xl font-bold">Share this post</h3>
