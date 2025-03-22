@@ -31,30 +31,30 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div className="flex gap-4">
-                  <Button asChild variant="outline" size="icon">
+                  {/* <Button asChild variant="outline" size="icon">
                     <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                       <Twitter className="h-4 w-4" />
                       <span className="sr-only">Twitter</span>
                     </Link>
-                  </Button>
+                  </Button> */}
                   <Button asChild variant="outline" size="icon">
                     <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4" />
                       <span className="sr-only">GitHub</span>
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="icon">
+                  {/* <Button asChild variant="outline" size="icon">
                     <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                       <Linkedin className="h-4 w-4" />
                       <span className="sr-only">LinkedIn</span>
                     </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="icon">
+                  </Button> */}
+                  {/* <Button asChild variant="outline" size="icon">
                     <Link href="mailto:hello@example.com">
                       <Mail className="h-4 w-4" />
                       <span className="sr-only">Email</span>
                     </Link>
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
               <div className="flex items-center justify-center">
