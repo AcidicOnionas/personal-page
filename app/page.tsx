@@ -104,5 +104,12 @@ const featuredPosts = [
     date: "June 12, 2024",
     image: "/dumb.jpg?height=400&width=600",
     excerpt: "IDK",
+  },
+  {
+    title: "wtf",
+    slug: "my-second-post",
+    date: "June 12, 2024",
+    image: "/dumb.jpg?height=400&width=600",
+    excerpt: "IDK",
   }
 ]

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 
@@ -11,15 +11,48 @@ interface BlogPostParams {
 }
 
 export default function BlogPost({ params }: BlogPostParams) {
-  // In a real app, you would fetch the post data based on the slug
-  // For this example, we'll use a mock post
-  const post = {
-    title: "How TF DOES SLUG WORK",
-    date: "June 12, 2024",
-    author: "Bumb ass behavior",
-    image: "",
-    content: "bruh",
+  const { slug } = params;
+  interface PostData {
+    title: string;
+    date: string;
+    author: string;
+    image: string;
+    content: string;
   }
+  // Define a mapping of slugs to post data
+  const postsData: Record<string, PostData> = {
+    "TEST": {
+      title: "Getting Started with Next.js",
+      date: "June 12, 2024",
+      author: "Jane Doe",
+      image: "/placeholder.svg?height=600&width=1200",
+      content: `
+        <p>Next.js is a powerful React framework that makes building web applications easier and more efficient. It provides a great developer experience with features like server-side rendering, static site generation, and more.</p>
+        
+        
+        <p>Next.js provides an excellent framework for building modern web applications. Its features make development faster and more enjoyable while ensuring great performance for users.</p>
+      `,
+    },
+    "my-second-post": {
+      title: "My Second Blog Post",
+      date: "March 19, 2025",
+      author: "John Smith",
+      image: "/placeholder.svg?height=600&width=1200",
+      content: `
+        <p>This is my second blog post about web development.</p>
+      `,
+    },
+    // Add more posts as needed
+  };
+  
+  // Get the post data for the current slug
+  const post = postsData[slug] || {
+    title: "Post Not Found",
+    date: "Unknown Date",
+    author: "Unknown Author",
+    image: "/placeholder.svg?height=600&width=1200",
+    content: "<p>Sorry, this post could not be found.</p>",
+  };
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -28,7 +61,7 @@ export default function BlogPost({ params }: BlogPostParams) {
           <Button variant="ghost" asChild className="mb-8 -ml-4">
             <Link href="/blog">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back
+              Back to all posts
             </Link>
           </Button>
 
@@ -51,7 +84,7 @@ export default function BlogPost({ params }: BlogPostParams) {
 
           <Separator className="my-10" />
 
-          {/* <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-4">
             <h3 className="text-xl font-bold">Share this post</h3>
             <div className="flex space-x-4">
               <Button variant="outline" size="sm">
@@ -64,7 +97,7 @@ export default function BlogPost({ params }: BlogPostParams) {
                 LinkedIn
               </Button>
             </div>
-          </div> */}
+          </div>
         </article>
       </main>
       <footer className="w-full border-t py-6">
@@ -84,5 +117,5 @@ export default function BlogPost({ params }: BlogPostParams) {
         </div>
       </footer>
     </div>
-  )
+  );
 }
