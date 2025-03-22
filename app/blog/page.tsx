@@ -73,7 +73,7 @@ export default function BlogPage() {
 const allPosts = [
   {
     title: "I have no idea what I'm doing",
-    slug: "your",
+    slug: "TEST",
     date: "March 18, 2025",
     image: "/dumb.jpg?height=400&width=600",
     excerpt: "I am a bum",

@@ -22,21 +22,18 @@ export default function BlogPost({ params }: BlogPostParams) {
   // Define a mapping of slugs to post data
   const postsData: Record<string, PostData> = {
     "TEST": {
-      title: "Getting Started with Next.js",
+      title: "Testing Slug",
       date: "June 12, 2024",
-      author: "Jane Doe",
+      author: "Chris Cao",
       image: "/placeholder.svg?height=600&width=1200",
       content: `
-        <p>Next.js is a powerful React framework that makes building web applications easier and more efficient. It provides a great developer experience with features like server-side rendering, static site generation, and more.</p>
-        
-        
-        <p>Next.js provides an excellent framework for building modern web applications. Its features make development faster and more enjoyable while ensuring great performance for users.</p>
+        <p>Still testing</p>
       `,
     },
     "my-second-post": {
       title: "My Second Blog Post",
-      date: "March 19, 2025",
-      author: "John Smith",
+      date: "March 22, 2025",
+      author: "Chris Cao",
       image: "/placeholder.svg?height=600&width=1200",
       content: `
         <p>This is my second blog post about web development.</p>
