@@ -25,7 +25,7 @@ export default function BlogPost({ params }: BlogPostParams) {
       title: "Testing Slug",
       date: "June 12, 2024",
       author: "Chris Cao",
-      image: "/placeholder.svg?height=600&width=1200",
+      image: "/dumb.jpg?height=600&width=1200",
       content: `
         <p>Still testing</p>
       `,
