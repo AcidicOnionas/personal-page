@@ -81,7 +81,7 @@ export default function BlogPost({ params }: BlogPostParams) {
 
           <Separator className="my-10" />
 
-          <div className="flex flex-col space-y-4">
+          {/* <div className="flex flex-col space-y-4">
             <h3 className="text-xl font-bold">Share this post</h3>
             <div className="flex space-x-4">
               <Button variant="outline" size="sm">
@@ -94,7 +94,7 @@ export default function BlogPost({ params }: BlogPostParams) {
                 LinkedIn
               </Button>
             </div>
-          </div>
+          </div> */}
         </article>
       </main>
       <footer className="w-full border-t py-6">
