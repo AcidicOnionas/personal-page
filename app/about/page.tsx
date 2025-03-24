@@ -38,7 +38,7 @@ export default function AboutPage() {
                     </Link>
                   </Button> */}
                   <Button asChild variant="outline" size="icon">
-                    <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://github.com/AcidicOnionas" target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4" />
                       <span className="sr-only">GitHub</span>
                     </Link>
