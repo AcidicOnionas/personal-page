@@ -26,7 +26,7 @@ export default function BlogPage() {
               {allPosts.map((post) => (
                 <Card key={post.slug} className="overflow-hidden">
                   <div className="aspect-video relative">
-                    <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover; object-position: bottom;" />
+                    <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover object-bottom" />
                   </div>
                   <CardHeader>
                     <CardTitle>{post.title}</CardTitle>
