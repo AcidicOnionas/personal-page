@@ -71,7 +71,7 @@ export default function BlogPost({ params }: BlogPostParams) {
           </div>
 
           <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-lg">
-            <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" priority />
+            <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-contain" priority />
           </div>
 
           <div
