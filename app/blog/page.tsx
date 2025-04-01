@@ -72,10 +72,10 @@ export default function BlogPage() {
 // Sample data - in a real app, this would come from a CMS or database
 const allPosts = [
   {
-    title: "I have no idea what I'm doing",
+    title: "n0s4n1ty 1 picoCTF2025 writeup",
     slug: "TEST",
-    date: "March 18, 2025",
-    image: "/dumb.jpg?height=400&width=600",
-    excerpt: "I am a bum",
+    date: "April 1, 2025",
+    image: "/NoSanityWriteup/NoSanity.png?height=400&width=600",
+    excerpt: "Writeup for n0s4n1ty 1 from picoCTF2025",
   }
 ]
