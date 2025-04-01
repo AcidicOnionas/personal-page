@@ -109,7 +109,7 @@ export default function AboutPage() {
               </div>
               <div className="w-full max-w-sm space-y-2">
                 <Button asChild className="w-full">
-                  <Link href="mailto:hello@example.com">Send me an email</Link>
+                  <Link href="mailto:chriscao0329@gmail.com">Send me an email</Link>
                 </Button>
               </div>
             </div>
