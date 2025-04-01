@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Code, Palette, Database, Zap, Eye, GitBranch } from 'lucide-react'
 import { Github, Linkedin, Mail, Twitter } from "lucide-react"
 
 export default function AboutPage() {
@@ -84,7 +85,9 @@ export default function AboutPage() {
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
               {skills.map((skill) => (
                 <Card key={skill.name} className="flex flex-col items-center p-6 text-center">
-                  <skill.icon className="h-12 w-12 mb-4 text-primary" />
+                  <div className="rounded-full bg-primary/10 p-3 mb-4">
+                    <skill.icon className="h-8 w-8 text-primary" strokeWidth={1.5} />
+                  </div>
                   <CardContent className="p-0">
                     <h3 className="text-xl font-bold">{skill.name}</h3>
                     <p className="text-gray-500 dark:text-gray-400">{skill.description}</p>
@@ -137,135 +140,32 @@ export default function AboutPage() {
 const skills = [
   {
     name: "Frontend Development",
-    icon: (props: any) => (
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="m18 16 4-4-4-4" />
-        <path d="m6 8-4 4 4 4" />
-        <path d="m14.5 4-5 16" />
-      </svg>
-    ),
+    icon: Code,
     description: "React, Next.js, TypeScript, Tailwind CSS",
   },
   {
     name: "UI/UX Design",
-    icon: (props: any) => (
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <circle cx="12" cy="12" r="10" />
-        <circle cx="12" cy="12" r="6" />
-        <circle cx="12" cy="12" r="2" />
-      </svg>
-    ),
+    icon: Palette,
     description: "Figma, Adobe XD, User Research, Prototyping",
   },
   {
     name: "Backend Development",
-    icon: (props: any) => (
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M18 6H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z" />
-        <path d="M15 3v3" />
-        <path d="M9 3v3" />
-        <path d="M9 14h6" />
-        <path d="M9 18h6" />
-      </svg>
-    ),
+    icon: Database,
     description: "Node.js, Express, MongoDB, PostgreSQL",
   },
   {
     name: "Performance Optimization",
-    icon: (props: any) => (
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="m8 14-6 6h9v-3" />
-        <path d="M18.37 3.63 8 14l3 3L21.37 6.63a2.12 2.12 0 1 0-3-3Z" />
-      </svg>
-    ),
+    icon: Zap,
     description: "Lighthouse, Web Vitals, Caching Strategies",
   },
   {
     name: "Accessibility",
-    icon: (props: any) => (
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <circle cx="12" cy="12" r="10" />
-        <path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z" />
-      </svg>
-    ),
+    icon: Eye,
     description: "WCAG, Semantic HTML, Screen Reader Testing",
   },
   {
     name: "DevOps",
-    icon: (props: any) => (
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <rect width="18" height="18" x="3" y="3" rx="2" />
-        <path d="M7 7h10" />
-        <path d="M7 12h10" />
-        <path d="M7 17h10" />
-      </svg>
-    ),
+    icon: GitBranch,
     description: "CI/CD, Docker, Vercel, AWS",
   },
 ]
