@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Code, Palette, Database, Zap, Eye, GitBranch } from 'lucide-react'
+import { Code, Palette, Database, Zap, Eye, GitBranch, Bug } from 'lucide-react'
 import { Github, Linkedin, Mail, Twitter } from "lucide-react"
 
 export default function AboutPage() {
@@ -167,5 +167,10 @@ const skills = [
     name: "DevOps",
     icon: GitBranch,
     description: "CI/CD, Docker, Vercel, AWS",
+  },
+  {
+    name: "Bugging",
+    icon: Bug,
+    description: "I Hate Bugs",
   },
 ]
