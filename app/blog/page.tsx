@@ -26,7 +26,7 @@ export default function BlogPage() {
               {allPosts.map((post) => (
                 <Card key={post.slug} className="overflow-hidden">
                   <div className="aspect-video relative">
-                    <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover object-bottom" />
+                    <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover object-top" />
                   </div>
                   <CardHeader>
                     <CardTitle>{post.title}</CardTitle>
@@ -72,7 +72,7 @@ export default function BlogPage() {
 // Sample data - in a real app, this would come from a CMS or database
 const allPosts = [
   {
-    title: "n0s4n1ty 1 picoCTF2025 writeup",
+    title: "n0s4n1ty 1  picoCTF2025  writeup",
     slug: "TEST",
     date: "April 1, 2025",
     image: "/NoSanityWriteup/NoSanity.png?height=400&width=600",
