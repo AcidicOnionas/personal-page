@@ -29,8 +29,8 @@ export default function BlogPost({ params }: BlogPostParams) {
       content: `
         <p>A pretty fun challenge, as with any picoCTF challenge, look at the hints</p>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;">
-        <img src="/NoSanityWriteup/Hint1.png" alt="First image" style="width: 50%; height: auto; border-radius: 8px;" />
-        <img src="/NoSanityWriteup/Hint2.png" alt="Second image" style="width: 50%; height: auto; border-radius: 8px;" />
+        <img src="/NoSanityWriteup/Hint1.png" alt="First image" style="width: 80%; height: auto; border-radius: 8px;" />
+        <img src="/NoSanityWriteup/Hint2.png" alt="Second image" style="width: 80%; height: auto; border-radius: 8px;" />
         </div>
         <p>Now lets start the instance, and open the webpage.
         Once you open the website provided to you by the instance, you get something like this.</p>
@@ -41,8 +41,8 @@ export default function BlogPost({ params }: BlogPostParams) {
         />
         <p>As with any challenge that involves inputs, we first upload something to test</p>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;">
-        <img src="/NoSanityWriteup/Uploading.png" alt="First image" style="width: 50%; height: auto; border-radius: 8px;" />
-        <img src="/NoSanityWriteup/result.png" alt="Second image" style="width: 50%; height: auto; border-radius: 8px;" />
+        <img src="/NoSanityWriteup/Uploading.png" alt="First image" style="width: 80%; height: auto; border-radius: 8px;" />
+        <img src="/NoSanityWriteup/result.png" alt="Second image" style="width: 80%; height: auto; border-radius: 8px;" />
         </div>
         <p>As we can see, the file gets directly inputted into the server's files, and as
         hint 1 above mentioned, the inputs are not sanitized, this means that any file we 
