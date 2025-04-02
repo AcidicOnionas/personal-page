@@ -27,7 +27,15 @@ export default function BlogPost({ params }: BlogPostParams) {
       author: "Chris Cao",
       image: "/NoSanityWriteup/NoSanity.png?height=900&width=1200",
       content: `
-        <p>Still testing</p>
+        <p>A pretty fun challenge</p>
+        <p>A pretty fun challenge, first you start the instance</p>
+        <p>Once you open the website provided to you by the instance, you get something like this</p>
+        <img 
+        src="/NoSanityWriteup/Step1.png" 
+        alt="Webpage" 
+        class="w-full rounded-lg my-6"
+        />
+
       `,
     },
     "my-second-post": {
