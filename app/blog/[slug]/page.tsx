@@ -27,8 +27,12 @@ export default function BlogPost({ params }: BlogPostParams) {
       author: "Chris Cao",
       image: "/NoSanityWriteup/NoSanity.png?height=900&width=1200",
       content: `
-        <p>A pretty fun challenge, first you start the instance. 
-        Once you open the website provided to you by the instance, you get something like this.</p>
+        <p>A pretty fun challenge, as with any picoCTF challenge, look at the hints</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;">
+        <img src="/NoSanityWriteup/Hint1.png" alt="First image" style="width: 100%; height: auto; border-radius: 8px;" />
+        <img src="/NoSanityWriteup/Hint2.png" alt="Second image" style="width: 100%; height: auto; border-radius: 8px;" />
+        </div>
+        <p>Once you open the website provided to you by the instance, you get something like this.</p>
         <img 
         src="/NoSanityWriteup/Step1.png" 
         alt="Webpage" 
