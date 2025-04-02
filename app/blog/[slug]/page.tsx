@@ -32,8 +32,7 @@ export default function BlogPost({ params }: BlogPostParams) {
         <img src="/NoSanityWriteup/Hint1.png" alt="First image" style="width: 80%; height: auto; border-radius: 8px;" />
         <img src="/NoSanityWriteup/Hint2.png" alt="Second image" style="width: 80%; height: auto; border-radius: 8px;" />
         </div>
-        <p>Now lets start the instance, and open the webpage.
-        Once you open the website provided to you by the instance, you get something like this.</p>
+        <p>Now lets start the instance and open the webpage. Once you open the website provided to you by the instance, you get something like this.</p>
         <img 
         src="/NoSanityWriteup/Step1.png" 
         alt="Webpage" 
