@@ -32,14 +32,18 @@ export default function BlogPost({ params }: BlogPostParams) {
         <img src="/NoSanityWriteup/Hint1.png" alt="First image" style="width: 100%; height: auto; border-radius: 8px;" />
         <img src="/NoSanityWriteup/Hint2.png" alt="Second image" style="width: 100%; height: auto; border-radius: 8px;" />
         </div>
-        <p>Once you open the website provided to you by the instance, you get something like this.</p>
+        <p>Now lets start the instance, and open the webpage.
+        Once you open the website provided to you by the instance, you get something like this.</p>
         <img 
         src="/NoSanityWriteup/Step1.png" 
         alt="Webpage" 
         class="w-full rounded-lg my-6"
         />
         <p>As with any challenge that involves non-sanitized inputs, we first upload something to test</p>
-
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;">
+        <img src="/NoSanityWriteup/Uploading.png" alt="First image" style="width: 100%; height: auto; border-radius: 8px;" />
+        <img src="/NoSanityWriteup/result.png" alt="Second image" style="width: 100%; height: auto; border-radius: 8px;" />
+        </div>
       `,
     },
     "my-second-post": {
