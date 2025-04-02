@@ -100,7 +100,7 @@ export default function Home() {
 const featuredPosts = [
   {
     title: "n0s4n1ty 1  picoCTF2025  writeup",
-    slug: "TEST",
+    slug: "n0s4n1ty-1",
     date: "April 1, 2025",
     image: "/NoSanityWriteup/NoSanity.png?height=400&width=600",
     excerpt: "Writeup for n0s4n1ty 1 from picoCTF2025",

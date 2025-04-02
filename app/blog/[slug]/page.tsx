@@ -21,7 +21,7 @@ export default function BlogPost({ params }: BlogPostParams) {
   }
   // Define a mapping of slugs to post data
   const postsData: Record<string, PostData> = {
-    "TEST": {
+    "n0s4n1ty-1": {
       title: "n0s4n1ty 1",
       date: "June 12, 2024",
       author: "Chris Cao",
