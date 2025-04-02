@@ -104,7 +104,7 @@ export default function AboutPage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Have a project in mind or just want to say hello? I'd love to hear from you.
+                  Send me something if you want, preferebly don't send anything.
                 </p>
               </div>
               <div className="w-full max-w-sm space-y-2">
