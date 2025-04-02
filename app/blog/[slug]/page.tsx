@@ -47,7 +47,41 @@ export default function BlogPost({ params }: BlogPostParams) {
         <p>As we can see, the file gets directly inputted into the server's files, and as
         hint 1 above mentioned, the inputs are not sanitized, this means that any file we 
         upload gets directly put into the server files. This means that we can upload files
-        such as bash and php files with a script that would enable RCE (remote code execution)</p>
+        such as php files with a script that would enable RCE (remote code execution)</p>
+        <p>Let's create such a PHP file (Note: the php file will likely get flagged by 
+        Microsoft Defender if you are on windows, so be quick with the uploading.</p>
+        <img 
+        src="/NoSanityWriteup/phpfile.png" 
+        alt="Webpage" 
+        class="w-full rounded-lg my-6"
+        />
+        <p>Save the file as shell.php, now we upload it onto the website</p>
+        <img 
+        src="/NoSanityWriteup/uploadedshell.png" 
+        alt="Webpage" 
+        class="w-full rounded-lg my-6"
+        />
+        <p>We can see that the file is now in uploads/shell.php, so now lets change the url 
+        to go to the file and run a command by adding ?cmd= at the end of the url (?cmd allows you to set the cmd variable in the php file)</p>
+        <img 
+        src="/NoSanityWriteup/lsr.png" 
+        alt="Webpage" 
+        class="w-full rounded-lg my-6"
+        />
+        <p>Hurray! We now have RCE. Now we do as hint 2 says and run sudo -l</p> 
+        <img 
+        src="/NoSanityWriteup/sudo-l.png" 
+        alt="Webpage" 
+        class="w-full rounded-lg my-6"
+        />
+        <p>As we can see, we can run any sudo command without password, and since we already know that the flag is in
+        root, we can sudo cat into the flag</p>
+        <img 
+        src="/NoSanityWriteup/flag.png" 
+        alt="Webpage" 
+        class="w-full rounded-lg my-6"
+        />
+        <p>Challenge Solved</p>
       `,
     },
     "my-second-post": {
@@ -84,13 +118,13 @@ export default function BlogPost({ params }: BlogPostParams) {
 
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">{post.title}</h1>
 
-          <div className="mt-4 flex items-center space-x-2 text-gray-500 mx-auto text-center">
+          <div className="mt-4 flex items-center space-x-2 text-gray-500">
             <time dateTime="2024-06-12">{post.date}</time>
             <span>•</span>
             <span>{post.author}</span>
           </div>
 
-          <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-lg mx-auto text-center">
+          <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-lg">
             <Image 
               src={post.image || "/placeholder.svg"} 
               alt={post.title} 
@@ -101,7 +135,7 @@ export default function BlogPost({ params }: BlogPostParams) {
           </div>
 
           <div
-            className="prose prose-gray max-w-none pt-10 dark:prose-invert mx-auto text-center"
+            className="prose prose-gray max-w-none pt-10 dark:prose-invert"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 {/* 
