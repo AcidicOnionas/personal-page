@@ -29,8 +29,8 @@ export default function BlogPost({ params }: BlogPostParams) {
       content: `
         <p>A pretty fun challenge, as with any picoCTF challenge, look at the hints</p>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;">
-        <img src="/NoSanityWriteup/Hint1.png" alt="First image" style="width: 100%; height: auto; border-radius: 8px;" />
-        <img src="/NoSanityWriteup/Hint2.png" alt="Second image" style="width: 100%; height: auto; border-radius: 8px;" />
+        <img src="/NoSanityWriteup/Hint1.png" alt="First image" style="width: 50%; height: auto; border-radius: 8px;" />
+        <img src="/NoSanityWriteup/Hint2.png" alt="Second image" style="width: 50%; height: auto; border-radius: 8px;" />
         </div>
         <p>Now lets start the instance, and open the webpage.
         Once you open the website provided to you by the instance, you get something like this.</p>
@@ -39,11 +39,15 @@ export default function BlogPost({ params }: BlogPostParams) {
         alt="Webpage" 
         class="w-full rounded-lg my-6"
         />
-        <p>As with any challenge that involves non-sanitized inputs, we first upload something to test</p>
+        <p>As with any challenge that involves inputs, we first upload something to test</p>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;">
-        <img src="/NoSanityWriteup/Uploading.png" alt="First image" style="width: 100%; height: auto; border-radius: 8px;" />
-        <img src="/NoSanityWriteup/result.png" alt="Second image" style="width: 100%; height: auto; border-radius: 8px;" />
+        <img src="/NoSanityWriteup/Uploading.png" alt="First image" style="width: 50%; height: auto; border-radius: 8px;" />
+        <img src="/NoSanityWriteup/result.png" alt="Second image" style="width: 50%; height: auto; border-radius: 8px;" />
         </div>
+        <p>As we can see, the file gets directly inputted into the server's files, and as
+        hint 1 above mentioned, the inputs are not sanitized, this means that any file we 
+        upload gets directly put into the server files. This means that we can upload files
+        such as bash and php files with a script that would enable RCE (remote code execution)</p>
       `,
     },
     "my-second-post": {
@@ -80,13 +84,13 @@ export default function BlogPost({ params }: BlogPostParams) {
 
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">{post.title}</h1>
 
-          <div className="mt-4 flex items-center space-x-2 text-gray-500">
+          <div className="mt-4 flex items-center space-x-2 text-gray-500 mx-auto text-center">
             <time dateTime="2024-06-12">{post.date}</time>
             <span>•</span>
             <span>{post.author}</span>
           </div>
 
-          <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-lg">
+          <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-lg mx-auto text-center">
             <Image 
               src={post.image || "/placeholder.svg"} 
               alt={post.title} 
@@ -97,7 +101,7 @@ export default function BlogPost({ params }: BlogPostParams) {
           </div>
 
           <div
-            className="prose prose-gray max-w-none pt-10 dark:prose-invert"
+            className="prose prose-gray max-w-none pt-10 dark:prose-invert mx-auto text-center"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 {/* 
