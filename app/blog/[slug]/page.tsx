@@ -61,8 +61,7 @@ export default function BlogPost({ params }: BlogPostParams) {
         alt="Webpage" 
         class="w-full rounded-lg my-6"
         />
-        <p>We can see that the file is now in uploads/shell.php, so now lets change the url 
-        to go to the file and run a command by adding ?cmd= at the end of the url (?cmd allows you to set the cmd variable in the php file)</p>
+        <p>We can see that the file is now in uploads/shell.php, so now lets change the url to go to the file and run a command by adding ?cmd= at the end of the url (?cmd allows you to set the cmd variable in the php file)</p>
         <img 
         src="/NoSanityWriteup/lsr.png" 
         alt="Webpage" 
@@ -74,8 +73,7 @@ export default function BlogPost({ params }: BlogPostParams) {
         alt="Webpage" 
         class="w-full rounded-lg my-6"
         />
-        <p>As we can see, we can run any sudo command without password, and since we already know that the flag is in
-        root, we can sudo cat into the flag</p>
+        <p>As we can see, we can run any sudo command without password, and since we already know that the flag is in root, we can sudo cat into the flag</p>
         <img 
         src="/NoSanityWriteup/flag.png" 
         alt="Webpage" 
