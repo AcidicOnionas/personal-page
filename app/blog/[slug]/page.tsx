@@ -23,7 +23,7 @@ export default function BlogPost({ params }: BlogPostParams) {
   const postsData: Record<string, PostData> = {
     "n0s4n1ty-1": {
       title: "n0s4n1ty 1",
-      date: "June 12, 2024",
+      date: "April 1, 2025",
       author: "Chris Cao",
       image: "/NoSanityWriteup/NoSanity.png?height=900&width=1200",
       content: `

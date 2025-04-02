@@ -69,7 +69,6 @@ export default function BlogPage() {
   )
 }
 
-// Sample data - in a real app, this would come from a CMS or database
 const allPosts = [
   {
     title: "n0s4n1ty 1  picoCTF2025  writeup",
