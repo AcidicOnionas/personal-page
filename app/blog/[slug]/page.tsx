@@ -81,7 +81,7 @@ export default function BlogPost({ params }: BlogPostParams) {
         <p>Challenge Solved</p>
       `,
     },
-    "my-second-post": {
+    "intro": {
       title: "My Second Blog Post",
       date: "March 22, 2025",
       author: "Chris Cao",

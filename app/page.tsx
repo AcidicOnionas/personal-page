@@ -99,17 +99,17 @@ export default function Home() {
 // Sample data - in a real app, this would come from a CMS or database
 const featuredPosts = [
   {
+    title: "Welcome",
+    slug: "intro",
+    date: "June 12, 2024",
+    image: "/dumb.jpg?height=400&width=600",
+    excerpt: "IDK",
+  },
+  {
     title: "n0s4n1ty 1  picoCTF2025  writeup",
     slug: "n0s4n1ty-1",
     date: "April 1, 2025",
     image: "/NoSanityWriteup/NoSanity.png?height=400&width=600",
     excerpt: "Writeup for n0s4n1ty 1 from picoCTF2025",
-  },
-  {
-    title: "wtf",
-    slug: "my-second-post",
-    date: "June 12, 2024",
-    image: "/dumb.jpg?height=400&width=600",
-    excerpt: "IDK",
   }
 ]

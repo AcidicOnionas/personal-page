@@ -71,6 +71,13 @@ export default function BlogPage() {
 
 const allPosts = [
   {
+    title: "Welcome",
+    slug: "intro",
+    date: "June 12, 2024",
+    image: "/dumb.jpg?height=400&width=600",
+    excerpt: "IDK",
+  },
+  {
     title: "n0s4n1ty 1  picoCTF2025  writeup",
     slug: "n0s4n1ty-1",
     date: "April 1, 2025",
