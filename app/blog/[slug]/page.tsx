@@ -82,12 +82,12 @@ export default function BlogPost({ params }: BlogPostParams) {
       `,
     },
     "intro": {
-      title: "My Second Blog Post",
+      title: "Hello",
       date: "March 22, 2025",
       author: "Chris Cao",
       image: "/placeholder.svg?height=600&width=1200",
       content: `
-        <p>This is my second blog post about web development.</p>
+        <p>Hello, this is my personal blog page,</p>
       `,
     },
     // Add more posts as needed
