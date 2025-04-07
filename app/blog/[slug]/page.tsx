@@ -121,12 +121,12 @@ export default function BlogPost({ params }: BlogPostParams) {
             <span>{post.author}</span>
           </div>
 
-          <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-lg">
+          <div className="relative mt-8 aspect-video w-full h-auto overflow-hidden rounded-lg">
             <Image 
               src={post.image || "/placeholder.svg"} 
               alt={post.title} 
               fill 
-              className="object-contain object-left" 
+              className="object-contain object-left my-6 rounded-lg" 
               priority 
             />
           </div>
