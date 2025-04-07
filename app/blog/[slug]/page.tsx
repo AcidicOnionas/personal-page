@@ -66,7 +66,7 @@ export default function BlogPost({ params }: BlogPostParams) {
         alt="Webpage" 
         class="w-full rounded-lg my-6"
         />
-        <p>Hurray! We now have RCE. Now we do as hint 2 says and run sudo -l</p> 
+        <p>Hurray! We now have RCE. Now we do as hint 2 says and run sudo -l (This was on firefox, if on chrome, any spaces in the URL is converted into %20, this is normal)</p> 
         <img 
         src="/NoSanityWriteup/sudo-l.png" 
         alt="Webpage" 
