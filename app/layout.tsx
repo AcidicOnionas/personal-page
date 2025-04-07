@@ -39,12 +39,12 @@ export default function RootLayout({
                   About
                 </Link>
               </nav>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <div className="mr-4">
                     <ModeToggle />
-                    {/* <Button asChild variant="default" size="sm" className="hidden md:flex">
+                    <Button asChild variant="default" size="sm" className="hidden md:flex">
                     <Link href="/about#contact">About Me</Link>
-                    </Button> */}
+                    </Button>
                     <Button variant="outline" size="icon" className="md:hidden">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ export default function RootLayout({
                     <span className="sr-only">Toggle menu</span>
                     </Button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </header>
             {children}
