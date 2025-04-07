@@ -25,10 +25,10 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <header className="sticky top-0 z-40 w-full border-b bg-background">
             <div className="container flex h-16 items-center justify-between py-4">
-              <Link href="/" className="flex items-center space-x-2 ml-4">
+              <Link href="/" className="flex items-center space-x-1 ml-4">
                 <span className="text-xl font-bold">My Blog</span>
               </Link>
-              <nav className="hidden gap-4 md:flex">
+              <nav className="hidden gap-6 md:flex">
                 <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
                   Home
                 </Link>
