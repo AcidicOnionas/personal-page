@@ -136,7 +136,6 @@ export default function AboutPage() {
   )
 }
 
-// Sample data
 const skills = [
   {
     name: "Frontend Development",

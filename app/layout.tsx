@@ -4,6 +4,7 @@ import Link from "next/link"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -68,7 +69,8 @@ export default function RootLayout({
               </div>
             </div>
           </header>
-          {children}
+            {children}
+            <Analytics />
         </ThemeProvider>
       </body>
     </html>
