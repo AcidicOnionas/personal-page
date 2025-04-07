@@ -28,7 +28,7 @@ export default function RootLayout({
               <Link href="/" className="flex items-center space-x-1 ml-4">
                 <span className="text-xl font-bold">My Blog</span>
               </Link>
-              <nav className="hidden gap-6 md:flex ml-[-20px]">
+              <nav className="hidden gap-6 md:flex ml-[-40px]">
                 <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
                   Home
                 </Link>
