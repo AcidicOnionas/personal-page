@@ -25,7 +25,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
             <header className="sticky top-0 z-40 w-full border-b bg-background">
-              <div className="container">
+              <div className="container flex h-16 items-center justify-between">
                 <Link href="/" className="flex items-center space-x-2 pl-2">
                   <span className="text-xl font-bold">My Blog</span>
                 </Link>
