@@ -22,7 +22,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <header className="sticky top-0 z-40 w-full border-b bg-background">
             <div className="container flex h-16 items-center">
-              <div className="flex items-center" style={{ gap: "calc(5% + 26.5rem)" }}>
+              <div className="flex items-center" style={{ gap: "28.5rem" }}>
                 <Link href="/" className="flex-shrink-0">
                   <span className="text-xl font-bold whitespace-nowrap">My Blog</span>
                 </Link>
