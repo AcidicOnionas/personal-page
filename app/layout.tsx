@@ -25,18 +25,18 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
             <header className="sticky top-0 z-40 w-full border-b bg-background">
-              <div className="container flex h-16 items-center justify-between">
-                <Link href="/" className="flex items-center space-x-2">
+              <div className="container flex h-16 items-center">
+                <Link href="/" className="mr-auto flex items-center">
                   <span className="text-xl font-bold">My Blog</span>
                 </Link>
-                <nav className="hidden gap-6 md:flex">
-                  <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+                <nav className="hidden md:flex">
+                  <Link href="/" className="px-3 text-sm font-medium transition-colors hover:text-primary">
                     Home
                   </Link>
-                  <Link href="/blog" className="text-sm font-medium transition-colors hover:text-primary">
+                  <Link href="/blog" className="px-3 text-sm font-medium transition-colors hover:text-primary">
                     Blog
                   </Link>
-                  <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
+                  <Link href="/about" className="px-3 text-sm font-medium transition-colors hover:text-primary">
                     About
                   </Link>
                 </nav>
