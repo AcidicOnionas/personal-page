@@ -76,22 +76,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="w-full border-t py-6">
-        <div className="container flex flex-col items-center justify-center gap-4 px-4 md:px-6 md:flex-row">
-          <p className="text-sm text-gray-500 dark:text-gray-400">© 2025 My Personal Blog. All rights reserved.</p>
-          <nav className="flex gap-4">
-            <Link href="#" className="text-sm text-gray-500 hover:underline dark:text-gray-400">
-              Twitter
-            </Link>
-            <Link href="#" className="text-sm text-gray-500 hover:underline dark:text-gray-400">
-              GitHub
-            </Link>
-            <Link href="#" className="text-sm text-gray-500 hover:underline dark:text-gray-400">
-              LinkedIn
-            </Link>
-          </nav>
-        </div>
-      </footer>
     </div>
   )
 }
