@@ -25,7 +25,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
             <header className="sticky top-0 z-40 w-full border-b bg-background">
-              <div className="container flex h-16 items-center justify-between">
+              <div className="container">
                 <Link href="/" className="flex items-center space-x-2 pl-2">
                   <span className="text-xl font-bold">My Blog</span>
                 </Link>
@@ -72,7 +72,7 @@ export default function RootLayout({
             </main>
             <footer className="w-full border-t py-6">
               <div className="container flex flex-col items-center justify-center gap-4 md:flex-row">
-                <p className="text-sm text-gray-500 dark:text-gray-400">© 2024 My Personal Blog. All rights reserved.</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">© 2025 My Personal Blog. All rights reserved.</p>
                 <nav className="flex gap-4">
                   <Link href="#" className="text-sm text-gray-500 hover:underline dark:text-gray-400">
                     Twitter
