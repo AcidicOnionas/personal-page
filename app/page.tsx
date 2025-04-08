@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
@@ -35,7 +35,7 @@ export default function Home() {
         </section>
 
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-900">
-          <div className="container px-4 md:px-6">
+          <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Posts</h2>
@@ -44,7 +44,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
               {featuredPosts.map((post) => (
                 <Card key={post.slug} className="overflow-hidden">
                   <div className="aspect-video relative">
