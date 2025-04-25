@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
-
+import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
@@ -55,6 +55,7 @@ export default function RootLayout({
             </div>
           </header>
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
