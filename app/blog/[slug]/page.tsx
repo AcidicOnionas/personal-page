@@ -90,7 +90,15 @@ export default function BlogPost({ params }: BlogPostParams) {
         <p>Hello, this is my personal blog page,</p>
       `,
     },
-    // Add more posts as needed
+    "cyberpatriot": {
+      title: "Cyberpatriot 2025",
+      date: "April 25, 2025",
+      author: "Chris Cao",
+      image: "/cypat/cypat.png?height=600&width=1200",
+      content: `
+        <p>A member of the 2025 CCA cyberpatriot team, and some of my experiences</p>
+      `,
+    },
   };
   
   // Get the post data for the current slug

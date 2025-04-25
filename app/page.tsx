@@ -90,6 +90,13 @@ const featuredPosts = [
     excerpt: "IDK",
   },
   {
+    title: "Cypat 2025",
+    slug: "cyberpatriot",
+    date: "April 25, 2025",
+    image: "/cypat/cypat.png?height=400&width=600",
+    excerpt: "Cyberpatriot 2025",
+  },
+  {
     title: "n0s4n1ty 1  picoCTF2025  writeup",
     slug: "n0s4n1ty-1",
     date: "April 1, 2025",
