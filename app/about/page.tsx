@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Code, Palette, Database, Zap, Eye, GitBranch, Bug } from 'lucide-react'
-import { Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { GithubIcon, LinkedinIcon } from "lucide-react"
 
 export default function AboutPage() {
   return (
@@ -30,32 +30,6 @@ export default function AboutPage() {
                   <p>
                     This blog is where I share my failureness
                   </p>
-                </div>
-                <div className="flex gap-4">
-                  {/* <Button asChild variant="outline" size="icon">
-                    <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                      <Twitter className="h-4 w-4" />
-                      <span className="sr-only">Twitter</span>
-                    </Link>
-                  </Button> */}
-                  <Button asChild variant="outline" size="icon">
-                    <Link href="https://github.com/AcidicOnionas" target="_blank" rel="noopener noreferrer">
-                      <Github className="h-4 w-4" />
-                      <span className="sr-only">GitHub</span>
-                    </Link>
-                  </Button>
-                  {/* <Button asChild variant="outline" size="icon">
-                    <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                      <Linkedin className="h-4 w-4" />
-                      <span className="sr-only">LinkedIn</span>
-                    </Link>
-                  </Button> */}
-                  {/* <Button asChild variant="outline" size="icon">
-                    <Link href="mailto:hello@example.com">
-                      <Mail className="h-4 w-4" />
-                      <span className="sr-only">Email</span>
-                    </Link>
-                  </Button> */}
                 </div>
               </div>
               <div className="flex items-center justify-center">
@@ -102,15 +76,22 @@ export default function AboutPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Send me something if you want, preferebly don't send anything.
-                </p>
-              </div>
-              <div className="w-full max-w-sm space-y-2">
-                <Button asChild className="w-full">
-                  <Link href="mailto:chriscao0329@gmail.com">Send me an email</Link>
-                </Button>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Socials</h2>
+                <p className="text-gray-500 dark:text-gray-400">Find out about me</p>
+                <div className="space-x-2">
+                  <Button asChild variant="outline" size="icon">
+                    <Link href="https://github.com/AcidicOnionas" target="_blank" rel="noopener noreferrer">
+                      <GithubIcon className="h-4 w-4" />
+                      <span className="sr-only">GitHub</span>
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="icon">
+                    <Link href="https://www.linkedin.com/in/chris-cao-908b611b0/" target="_blank" rel="noopener noreferrer">
+                      <LinkedinIcon className="h-4 w-4" />
+                      <span className="sr-only">LinkedIn</span>
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

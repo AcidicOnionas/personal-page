@@ -1,7 +1,5 @@
 import type React from "react"
 import { Inter } from "next/font/google"
-import Link from "next/link"
-import Image from "next/image"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Footer } from "@/components/Footer"
 import { Header } from "@/components/header"
@@ -26,9 +24,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Header />
-          {children}
-          <Footer />
+            <Header />
+              {children}
+            <Footer />
           <Analytics />
         </ThemeProvider>
       </body>
